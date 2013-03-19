@@ -39,8 +39,10 @@ class ErlangR15b01 < Formula
   option 'time', '`brew test --time` to include a time-consuming test'
   option 'no-docs', 'Do not install documentation'
 
+  prefix '#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}
+
   def install
-    ohai "Compilation takes a long time; use `brew install -v erlang` to see progress" unless ARGV.verbose?
+    ohai "Compilation takes a long time; use `brew install -v #{name}` to see progress" unless ARGV.verbose?
 
     if ENV.compiler == :llvm
       # Don't use optimizations. Fixes build on Lion/Xcode 4.2
