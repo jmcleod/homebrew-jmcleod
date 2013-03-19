@@ -41,7 +41,7 @@ class ErlangR15b01 < Formula
 
   def install
 
-    prefix = '#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}'
+    prefix = `#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}`
 
     ohai "Compilation takes a long time; use `brew install -v #{name}` to see progress" unless ARGV.verbose?
 
