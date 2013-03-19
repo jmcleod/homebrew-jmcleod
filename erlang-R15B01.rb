@@ -52,7 +52,7 @@ class ErlangR15b01 < Formula
     system "./otp_build autoconf" if File.exist? "otp_build"
 
     args = ["--disable-debug",
-            "--prefix=#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}",
+            "--prefix=#{prefix}",
             "--enable-kernel-poll",
             "--enable-threads",
             "--enable-dynamic-ssl-lib",
