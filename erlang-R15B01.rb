@@ -40,9 +40,6 @@ class ErlangR15b01 < Formula
   option 'no-docs', 'Do not install documentation'
 
   def install
-
-    prefix = `#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}`
-
     ohai "Compilation takes a long time; use `brew install -v #{name}` to see progress" unless ARGV.verbose?
 
     if ENV.compiler == :llvm
@@ -55,7 +52,7 @@ class ErlangR15b01 < Formula
     system "./otp_build autoconf" if File.exist? "otp_build"
 
     args = ["--disable-debug",
-            "--prefix=#{prefix}",
+            "--prefix=#{HOMEBREW_PREFIX}/Cellar/erlang/#{version}",
             "--enable-kernel-poll",
             "--enable-threads",
             "--enable-dynamic-ssl-lib",
