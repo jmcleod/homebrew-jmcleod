@@ -7,7 +7,7 @@ end
 
 class ErlangR15B01Htmls < Formula
   url 'http://erlang.org/download/otp_doc_html_R15B01.tar.gz'
-  sha1 'dfbad0ffd99be2ae219615f7a354ee9d1442e1a7''
+  sha1 'dfbad0ffd99be2ae219615f7a354ee9d1442e1a7'
 end
 
 class ErlangR15B01HeadManuals < Formula
@@ -17,7 +17,7 @@ end
 
 class ErlangR15B01HeadHtmls < Formula
   url 'http://erlang.org/download/otp_doc_html_R15B01.tar.gz'
-  sha1 'dfbad0ffd99be2ae219615f7a354ee9d1442e1a7''
+  sha1 'dfbad0ffd99be2ae219615f7a354ee9d1442e1a7'
 end
 
 class ErlangR15B01 < Formula
